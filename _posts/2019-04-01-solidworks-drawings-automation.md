@@ -2,11 +2,13 @@
 layout: post
 title: Basic Concepts of Automating Drawings Using SOLIDWORKS API
 description: 'Explanation of basic concepts of automating drawings using SOLIDWORKS API: dimensioning, drawing sketches, transforming coordinates'
-image:
+image: /res/2019-04-01-solidworks-drawings-automation/solidworks-drawing.png
 labels: dimension, drawing, sheet, transform, view
 redirect_from:
   - /2019/04/api-automating-drawings-concepts.html
 ---
+{% include img.html src="/res/2019-04-01-solidworks-drawings-automation/solidworks-drawing.png" alt="SOLIDWORKS drawing" align="center" %}
+
 Automating drawings using SOLIDWORKS API is one of the most common tasks when it comes to macro development. This is however one of the most challenging sections of development for SOLIDWORKS.
 
 Usually the macros for drawing would

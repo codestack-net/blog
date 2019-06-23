@@ -1,12 +1,14 @@
 ---
 layout: post
 title: 'SOLIDWORKS Macros: comprehensive guide'
-description: Beginner friendly overviews of SOLIDWORKS macros (VBA and VSTA)
-image:
+description: Beginner friendly overviews of SOLIDWORKS macros. Understand the difference between VBA and VSTA macros. Learn how to record macros, create from scratch or add from online library
+image: /res/2019-05-22-solidworks-macros-guide/solidworks-macros-guide.png
 labels: solidworks api, solidworks automation, solidworks macro, vba, vsta
 redirect_from:
   - /2019/05/solidworks-macros-comprehensive-guide.html
 ---
+{% include img.html src="/res/2019-05-22-solidworks-macros-guide/solidworks-macros-guide.png" alt="SOLIDWORKS Macros guide" align="center" %}
+
 If you are SOLIDWORKS user, most likely you know about SOLIDWORKS macros. SOLIDWORKS macros are great automation tools which enable running the code utilising SOLIDWORKS API.
 
 If you are not a developer you can still successfully use macros in your day-to-day job as there are thousands of them available in the internet.

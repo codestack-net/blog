@@ -9,10 +9,12 @@ layout: home
       <span class="post-meta">{{ post.date | date: date_format }}</span>
       <h2>
         <a class="post-link" href="{{ post.url | relative_url }}">
+          <img src="{{ post.image }}" style="width:100px;" alt="post.title"/>
           {{ post.title | escape }}
         </a>
       </h2>
       {{ post.description }}
+      <hr>
     </li>
     {%- endfor -%}
   </ul>

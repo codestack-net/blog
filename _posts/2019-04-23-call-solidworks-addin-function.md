@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How To Call Functions Of SOLIDWORKS add-in
-description: Calling functions of SOLIDWORKS add-in from macros or stand-alone applications
+description: Calling functions of SOLIDWORKS add-in from macros or stand-alone applications. Learn how to enable SOLIDWORKS automation from external applications and scripts
 image: /res/2019-04-23-call-solidworks-addin-function/solidworks-addin-api.png
 labels: add-in api, add-in object, com, functions, solidworks api
 redirect_from:

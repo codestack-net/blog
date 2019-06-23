@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Understanding API Object Model
-description: Explanation of SOLIDWORKS API Object Model and Classes Hierarchy
+description: Explanation of SOLIDWORKS API Object Model and Classes Hierarchy. Explanation of relationship between classes and methods.
 image: /res/2019-03-23-understanding-api-object-model/solidworks-api-interactive-diagram.png
 labels: api object model, class hierarchy, class relationship, solidworks api, 
 redirect_from:

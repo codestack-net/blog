@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SOLIDWORKS API Command Doesn't Exist? Need plan B
-description: Alternative workarounds of calling SOLIDWORKS functions when SOLIDWORKS API method is not implemented
+description: Alternative workarounds of calling SOLIDWORKS functions when SOLIDWORKS API method is not implemented. How to use Windows API and SOLIDWORKS commands to call functions of SOLIDWORKS
 labels:
 image: /res/2019-03-07-missing-solidworks-api-command/solidworks-api-method-unavailable.png
 redirect_from:

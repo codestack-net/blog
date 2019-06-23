@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Storing Data In SOLIDWORKS 3rd Party Storage And Store
-description: Storing data into SOLIDWORKS 3rd party storage and store using API
+description: Storing data into SOLIDWORKS 3rd party storage and store using API. Serialization and deserialization of structures and other data.
 image: /res/2019-04-18-solidworks-third-party-storage/solidworks-store-diagram.png
 labels: 3rd party storage, c#, data, serialization, vb.net
 redirect_from:
