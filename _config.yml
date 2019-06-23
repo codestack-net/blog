@@ -6,11 +6,17 @@ name: CodeStack Blog
 markdown: kramdown
 baseurl: /
 permalink: /:title
+paginate: 5
+paginate_path: "/blog/page:num/"
 
 google_analytics: UA-122106766-1
-    
+
+disqus:
+  shortname: codestack-net
+
 plugins:
   - jekyll-redirect-from
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-paginate
