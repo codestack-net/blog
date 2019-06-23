@@ -1,14 +1,12 @@
 <header class="site-header">
     <div class="wrapper">
         <div class="footer-col-wrapper">
-            <div class="footer-col one-half">
-                <a class="site-title" rel="author" href="{{ "/" | relative_url }}"><img alt='{{ site.title | escape }}'
+            <div>
+                <a class="site-title" style="padding-left: 20px;padding-right: 20px;" rel="author" href="{{ "/" | relative_url }}"><img alt='{{ site.title | escape }}'
                         src="{{ '/banner.png' | relative_url }}">{{ site.title | escape }}</a>
             </div>
 
-            <div class="footer-col one-half">
-                <p>{{ site.description | escape }}</p>
-            </div>
+            <div>{{ site.description | escape }}</div>
 
         </div>
 </header>
