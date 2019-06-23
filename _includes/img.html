@@ -1,0 +1,15 @@
+{% if include.align == 'center' %}
+<center>
+{% endif %}
+<figure>
+   <a href="{{ include.src }}" imageanchor="1">
+   <img src="{{ include.src }}" class="responsive"
+   {% if include.height %} height="{{ include.height }}" {% endif %}
+   {% if include.width %} width="{{ include.width }}" {% endif %}
+   {% if include.alt %} alt="{{ include.alt }}" {% endif %}/>
+   {% if include.alt %}{% unless include.nofigcaption %}<figcaption>{{ include.alt }}</figcaption>{% endunless %}{% endif %}
+   </a>
+</figure>
+{% if include.align == 'center' %}
+</center>
+{% endif %}

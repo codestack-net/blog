@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <style>
+      * {
+        box-sizing: border-box;
+      }
+    
+      .recommended {
+        float: left;
+        width: 30%;
+        padding: 10px;
+      }
+    
+      .content {
+          float: left;
+          width: 50%;
+          padding: 10px;
+      }
+
+      .subscribe {
+          float: left;
+          width: 20%;
+          padding: 10px;
+      }
+    
+      .layout:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      @media screen and (max-width: 600px) {
+        .recommended {
+          width: 100%;
+        }
+        .content {
+            width: 100%;
+        }  
+        .subscribe {
+            width: 100%;
+        }  
+      }
+      </style>
+
+  <body>
+
+    {%- include header.html -%}
+
+    <main class="page-content" aria-label="Content">
+        <div class="layout">
+          <div class="recommended">
+              Recommended
+          </div>
+          <div class="content wrapper">
+              {{ content }}
+          </div>
+          <div class="subscribe">
+            Subscribe
+          </div>
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>

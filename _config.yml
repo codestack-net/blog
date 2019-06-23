@@ -1,0 +1,16 @@
+title: CodeStack Blog
+description: Blog about software development, automating SOLIDWORKS with macros and API, C# Visual Basic, WPF, WCF, web development, tips & tricks
+email: codestack.net@gmail.com
+theme: minima
+name: CodeStack Blog
+markdown: kramdown
+baseurl: /
+permalink: /:title
+
+google_analytics: UA-122106766-1
+    
+plugins:
+  - jekyll-redirect-from
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
