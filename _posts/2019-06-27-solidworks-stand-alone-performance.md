@@ -112,12 +112,12 @@ public void IndexFaces(IAssemblyDoc assm)
 
 Indexing 200 faces in add-in took 0.12 seconds, while it took more than 24 seconds in the stand-alone and 1.56 seconds in stand-alone with CommandInProgress option enabled. The numbers are more shocking for the large assembly with over 17,000 faces as it took 3.43 seconds to index from the add-in, but almost 3 minutes (159.83 seconds) in stand-alone with CommandInProgress option enabled and more than 50 minutes in the stand-alone (3024.57 seconds).
 
-To better emphasize the difference the following chart is created based on the performance drop ratio compared to a baseline (add-in). As you can see stand-alone application performance was 209-882+ times slower than the add-in, while stand-alone with command in progress 14-47 times slower (which is also not acceptable). While scheduled execution shown only 2-4 times performance drop.
+To better emphasize the difference the following chart is created based on the performance drop ratio compared to a baseline (add-in). As you can see stand-alone application performance was 209-882 times slower than the add-in, while stand-alone with command in progress 14-47 times slower (which is also not acceptable). While scheduled execution shown only 2-4 times performance drop.
 
 {% include img.html src="res/2019-06-25-solidworks-stand-alone-performance/faces-index-performance-chart.png" alt="Performance comparison for indexing faces task" align="center" %}
 
 ## Summary
 
-* It was experimentally proven that the best performance benefits of execution of stand-alone application is achieved by [in-Process invoking of SOLIDWORKS add-in API from out-of-process applications](https://www.codestack.net/solidworks-api/getting-started/inter-process-communication/invoke-add-in-functions/in-process-invoking/).
+* It was experimentally proven that the best performance benefits of execution of stand-alone application is achieved by [in-process invoking of SOLIDWORKS add-in API from out-of-process applications](https://www.codestack.net/solidworks-api/getting-started/inter-process-communication/invoke-add-in-functions/in-process-invoking/).
 * For some experiments the above approach proven to be even faster than in-process invoking.
 * The performance benefits of the in-process invoking from stand-alone application varies depending on the SOLIDWORKS API used. And can provide minimal benefits (for the task such as filling the table) to maximum benefits (for geometry traversing)
