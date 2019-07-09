@@ -5,7 +5,7 @@ description: Detailed overview of eDrawings API, creating Windows Forms and WPF 
 image: /res/2019-07-09-edrawings-api-overview/edrawings.png
 labels: edrawings,markup,pdf
 ---
-{% include img.html src="/res/2019-07-09-edrawings-api-overview/edrawings.png" width=350 alt="SOLIDWORKS eDrawings" align="center" %}
+{% include img.html src="/res/2019-07-09-edrawings-api-overview/edrawings.svg" width=350 alt="SOLIDWORKS eDrawings" align="center" %}
 
 eDrawings is a free SOLIDWORKS file viewer. Software can be downloaded from the [eDrawingsViewer](https://www.edrawingsviewer.com/) web-site. This application not only allows to view, markup, measure and print SOLIDWORKS, DXF and DWG files without having SOLIDWORKS installed, but also provides API for a programmatic access to its features.
 
