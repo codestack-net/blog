@@ -1,0 +1,33 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="feed.xslt"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>{{ site.name | xml_escape }}</title>
+		<description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>		
+		<link>{{ site.url }}</link>
+		<image>
+			<url>{{ site.url }}/logo.png</url>
+			<title>{{ site.name | xml_escape }}</title>
+			<link>{{ site.url }}</link>
+		</image>
+		<lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
+		<atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
+		{%- assign entries = site.posts | where_exp: "item", "item.layout != null" -%}
+		{%- assign entries = entries | where_exp: "item", "item.layout" -%}
+		{%- assign entries = entries | where_exp: "item", "item.sitemap != false" -%}
+		{%- assign entries = entries | where_exp: "item", "item.title" -%}
+		{% for page in entries %}
+		{%- assign groups = page.url | split: "/" -%}
+		<item>
+			<title>{{ page.title | xml_escape }}</title>
+			<description>{{ page.description | xml_escape }}</description>
+			<pubDate>{{ page.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+			<link>{{ site.url }}{{ page.url }}</link>
+			<guid isPermaLink="true">{{ site.url }}{{ page.url }}</guid>
+		</item>
+		{% endfor %}
+	</channel>
+</rss>
