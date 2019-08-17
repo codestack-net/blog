@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Stay in touch with latest CodeStack updates!
-description: Learn how to stay in touch with latest updates about SOLIDWORKS API, development. Do not miss the releases of new useful macros or application to enhance your SOLIDWORKS experience.
+description: Learn how to stay in touch with CodeStack latest updates about SOLIDWORKS API, C#, Visual Basic, DevOps and software development tutorials and tips & trick. Never miss the releases of new useful macros or application to enhance your SOLIDWORKS experience.
 image: /res/2019-08-17-stay-in-touch/logo.png
 labels: updates,rss,newsletter,blog
 ---
