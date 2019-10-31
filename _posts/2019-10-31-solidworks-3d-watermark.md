@@ -93,6 +93,7 @@ End Function
 ~~~
 
 * Download [geometry file](/res/2019-10-31-solidworks-3d-watermark/geometry.dat) and place in the same folder as macro
+* Create new part file or open existing one
 * Run the macro. 3D watermark is displayed. This is a copy of the model downloaded from [GrabCad](https://grabcad.com/library/pumpkin-5)
 * Stop the macro or close the model to remove the watermark
 
